@@ -1,10 +1,10 @@
 # FFmpeg/FFprobe for AWS Lambda
 
-A Lambda layer containing a static version of FFmpeg/FFprobe utilities from the [`FFmpeg`](https://www.ffmpeg.org/) Linux package, compatible with Amazon Linux 2.x and Amazon Linux 1.x instances (including the `nodejs10.x` runtime, and the updated 2018.03 Amazon Linux 1 runtimes). 
+A Lambda layer containing a static version of FFmpeg/FFprobe utilities from the [`FFmpeg`](https://www.ffmpeg.org/) Linux package, compatible with Amazon Linux 2.x and Amazon Linux 1.x instances (including the `nodejs10.x` runtime, and the updated 2018.03 Amazon Linux 1 runtimes).
 
 ## Usage
 
-Absolutely the easiest way of using this is to pull it directly from the AWS Serverless Application repository into a CloudFormation/SAM application, or deploy directly from the Serverless Application Repository into your account, and then link as a layer. 
+Absolutely the easiest way of using this is to pull it directly from the AWS Serverless Application repository into a CloudFormation/SAM application, or deploy directly from the Serverless Application Repository into your account, and then link as a layer.
 
 The `ffmpeg` and `ffprobe` binaries will be in `/opt/bin/` after linking the layer to a Lambda function.
 
@@ -43,15 +43,14 @@ make deploy-example DEPLOYMENT_BUCKET=<YOUR BUCKET NAME>
 
 For more information on using FFmpeg and FFprobe, check out <https://ffmpeg.org/documentation.html>
 
-## Author
+## Authors
 
-Gojko Adzic <https://gojko.net>
+* Jonas Neubert <https://jonasneubert.com>
+* forked from work by Gojko Adzic <https://gojko.net>
 
 ## License
 
 * These scripts: [MIT](https://opensource.org/licenses/MIT)
-* FFmpeg: GPLv2.1 <http://ffmpeg.org/legal.html>, John Van Sickle's static build GPL v3 <https://johnvansickle.com/ffmpeg/>
+* John Van Sickle's static FFmpeg build: [GPL v3](https://johnvansickle.com/ffmpeg/)
 
-## LGPL version
-
-*  [Giuseppe Battista](http://github.com/giusedroid) created a build that contains only LGPL components, for organisations that are concerned about GPL licensing. See it at <https://github.com/giusedroid/ffmpeg-aws-lambda-layer/tree/license/lgpl>
+[Giuseppe Battista](http://github.com/giusedroid) created an alternative to this project that contains only LGPL components, for organisations that are concerned about GPL licensing. See it at <https://github.com/giusedroid/ffmpeg-aws-lambda-layer/tree/license/lgpl>.
